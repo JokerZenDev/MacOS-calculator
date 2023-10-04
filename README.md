@@ -27,7 +27,7 @@ To run this application locally on your machine, follow these steps:
 2. Navigate to the project directory:
 
     ```shell
-    cd ios-calculator
+    cd iOS-calculator
     ```
 
 3. Install the project dependencies:
