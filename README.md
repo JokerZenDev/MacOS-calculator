@@ -1,46 +1,61 @@
-# Getting Started with Create React App
+# iOS Calculator Simulator
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![Calculator Demo](demo.gif)
 
-## Available Scripts
+## Overview
 
-In the project directory, you can run:
+The iOS Calculator Simulator is a web application built with React.js that replicates the functionality and design of the native iOS calculator app. This project provides users with a familiar calculator experience right in their web browser.
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+-   Basic arithmetic operations: addition, subtraction, multiplication, division.
+-   Reset functionality: reset the calculator (C).
+-   Percentage functionality: divides the number by 100 (%).
+-   Change Sign functionality: change the sign of number (+/-).
+-   Responsive design: works seamlessly on various screen sizes, including mobile devices.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Getting Started
 
-### `npm test`
+To run this application locally on your machine, follow these steps:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Clone this repository to your local machine:
 
-### `npm run build`
+    ```shell
+    git clone https://github.com/JokerZenDev/iOS-calculator.git
+    ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. Navigate to the project directory:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+    ```shell
+    cd ios-calculator
+    ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. Install the project dependencies:
 
-### `npm run eject`
+    ```shell
+    npm install
+    ```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+4. Start the development server:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+    ```shell
+    npm start
+    ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+5. Open your web browser and visit http://localhost:3000 to use the iOS Calculator Simulator.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Usage
 
-## Learn More
+-   To perform basic calculations, click the calculator buttons.
+-   Use the Clear (C) button to reset the calculator.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Technologies Used
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+-   React.js
+-   JavaScript (ES6)
+-   CSS (with Flexbox for layout)
+-   HTML5
+
+## License
+
+This project is licensed under the [MIT License](LICENSE)
