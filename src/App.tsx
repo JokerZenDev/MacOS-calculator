@@ -1,6 +1,13 @@
 import React, { useState } from "react"
 import "./App.css"
 
+const numbers = [
+	["7", "8", "9"],
+	["4", "5", "6"],
+	["1", "2", "3"],
+	["0", "."],
+]
+
 function App() {
 	const [buffer, setBuffer] = useState("0")
 	const [result, setResult] = useState(0)
@@ -90,50 +97,19 @@ function App() {
 							<button onClick={() => handlePercent()}>%</button>
 						</div>
 						<div className='numbers'>
-							<div className='row'>
-								<button onClick={() => handleNumber("7")}>
-									7
-								</button>
-								<button onClick={() => handleNumber("8")}>
-									8
-								</button>
-								<button onClick={() => handleNumber("9")}>
-									9
-								</button>
-							</div>
-							<div className='row'>
-								<button onClick={() => handleNumber("4")}>
-									4
-								</button>
-								<button onClick={() => handleNumber("5")}>
-									5
-								</button>
-								<button onClick={() => handleNumber("6")}>
-									6
-								</button>
-							</div>
-							<div className='row'>
-								<button onClick={() => handleNumber("1")}>
-									1
-								</button>
-								<button onClick={() => handleNumber("2")}>
-									2
-								</button>
-								<button onClick={() => handleNumber("3")}>
-									3
-								</button>
-							</div>
-							<div className='row'>
-								<button
-									onClick={() => handleNumber("0")}
-									className='zero'
-								>
-									0
-								</button>
-								<button onClick={() => handleNumber(".")}>
-									.
-								</button>
-							</div>
+							{numbers.map((row) => (
+								<div className='row'>
+									{row.map((number) => (
+										<button
+											key={number}
+											onClick={() => handleNumber(number)}
+											className={number === "0" ? "zero" : ""}
+										>
+											{number}
+										</button>
+									))}
+								</div>
+							))}
 						</div>
 					</div>
 					<div className='signs'>
